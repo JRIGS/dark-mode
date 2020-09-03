@@ -7,6 +7,8 @@ import Navbar from "./components/Navbar";
 
 import "./styles.scss";
 
+
+
 const App = () => {
   const [coinData, setCoinData] = useState([]);
 
@@ -19,7 +21,8 @@ const App = () => {
       .catch(err => console.log(err));
   }, []);
   return (
-    <div className={darkmode ? "dark-mode App" : "App"}>
+    // <div className={darkmode ? "dark-mode App" : "App"}>
+    <div>
       <Navbar />
       <Charts coinData={coinData} />
     </div>
